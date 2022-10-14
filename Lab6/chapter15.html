@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        </title>
+    </head>
+
+    <body>
+        <body>
+            <canvas id="canvas" width="400" height="400" style="border: 1px solid #c3c3c3;">
+            Oh no! This browser does not support HTML5 :(
+            </canvas>
+            <script>
+                var canvas=document.getElementById("canvas");
+                var canvas1=canvas.getContext("2d");
+                canvas1.fillStyle=(166, 114, 224)
+                canvas1.fillRect(100,140,200,100)                
+                canvas1.beginPath(); //declare the beginning of settings for our line
+                canvas1.fillStyle = "rgba(166, 114, 224)"; 
+                canvas1.moveTo(20,150); // set the starting point of our "pen" to the middle
+                canvas1.lineTo(20,200); // move our "pen" down 50 pixels, drawing a line
+                canvas1.lineTo(200,200); // move our "pen" 50 pixels to the right
+                canvas1.closePath(); // Draw a direct line back to our starting point
+                canvas1.fill(); // Visually place the defined line on the page
+            </script>
+    </body>
+</html>
