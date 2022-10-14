@@ -1,0 +1,25 @@
+<!DOCTYPE html/>
+<html>
+    <head>
+        <title> Lab6 </title>
+    </head>
+    <body>
+        <h1>Creating Graphics with Canvas</h1>
+        <canvas id="canvas" width="500" height="500" style="border: 1px solid #c3c3c3;">
+            Oh no! This browser does not support HTML5 :(
+        </canvas>
+        <script>
+            var canvas=document.getElementById("canvas");
+            var canvas1=canvas.getContext("2d");
+            canvas1.strokeStyle="rgb(155, 114, 224)";
+            canvas1.strokeRect(100, 150, 300,200);
+            canvas1.beginPath();
+            canvas1.fillStyle ="rgba(245, 204, 18)";
+            canvas1.moveTo(300,290);
+            canvas1.lineTo(200,290);
+            canvas1.lineTo(250,200);
+            canvas1.closePath();
+            canvas1.fill();
+            </script>
+    </body>
+</html>
