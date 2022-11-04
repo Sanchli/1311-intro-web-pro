@@ -4,25 +4,25 @@
 
         <title>Lab 8</title>
         <style>
-            body {
-
+            .list1{border-style: dotted;
+                border-width: 10px;background-color: beige; color: brown }
+            .list2{border-style: dashed;
+                border-width: 10px;background-color: yellow; color: blueviolet }
+            a:link{color:green;}
+            a:hover{
+                color:red;
+                font-weight:bold;
             }
-
-            #list1 {
-                color: green;
-                margin
-            }
-
+            p {padding:10px 10px 10px 5px;}
         </style>        
     </head>
     <body>
-        <header>
+        <header style="margin-left: 50px";>
             <h1 style ="color:red;">Learning CSS this Week</h1>
         </header>
-
-        <p>In the order unordered list I will be listing different kinds of instruments that one can learn to play.</p>
+        <p class="list2">In the order unordered list I will be listing different kinds of instruments that one can learn to play.</p>
         
-        <div>
+        <div class="list1">
             <ul>
                 <li>Piano</li>
                 <li>Ukalele</li>
@@ -30,9 +30,8 @@
                 <li>Drums</li>
             </ul>
         </div>
-
-        <p>In this unorderded list I will be listing different genres of music that one can play according to your taste.</p>
-        <div>
+        <p class="list2">In this unorderded list I will be listing different genres of music that one can play according to your taste.</p>
+        <div class="list1">
             <ul>
                 <li>Classic</li>
                 <li>Rock</li>
