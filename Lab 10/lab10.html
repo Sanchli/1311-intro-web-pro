@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>Lab 10</title>
+		<script>
+			document.write("<h1>Choose wisely... The choice is yours </h1>");
+			document.write("<h3> Red pill or Blue pill? </h3>")
+			function blue_pill(){
+				var blue="You chose blue...continue to live in a simulation."
+				alert(blue);
+				document.body.style.backgroundColor= "#0099ff";
+			}
+			function red_pill(){
+				var red= "You chose red...Now let me show you where the rabbit hole goes."
+				document.body.style.backgroundColor= "#ff0000";
+				alert(red);
+			}
+		</script>
+	</head>
+	
+	<body style="background-color:#33cc33;">
+		<input type="button" onclick="blue_pill()" value="blue pill"/>
+		<input type="button" onclick="red_pill()" value="red pill"/>
+	</body>
+</html>
